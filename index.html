@@ -1,1 +1,359 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="./Cover/bootstrap.min.css" rel="stylesheet">
+<link href="./Cover/font-awesome.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=400, initial-scale=1" name="viewport">
+<meta content="Snehal, Shendware, Software developer, Arizona State University, SN" name="keywords">
+<meta content="Snehal Shendware" name="author">
+<title>
+	Snehal's Web Page
+</title>
+<style id="page-skin-1" type="text/css"><!--
+/*
+--></style>
+<style type="text/css">
+/* go on then, styles go here.. knock yourself out! */
+/* go on then, styles go here.. knock yourself out! */
+@-webkit-keyframes panning {
+  0% {
+    -webkit-transform: translateX(-25%) translateY(-25%);
+            transform: translateX(-25%) translateY(-25%);
+  }
+  20% {
+    width: 250%;
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+  }
+  40% {
+    width: 230%;
+    -webkit-transform: translateX(-25%) translateY(-50%);
+            transform: translateX(-25%) translateY(-50%);
+  }
+  60% {
+    width: 210%;
+    -webkit-transform: translateX(-50%) translateY(-25%);
+            transform: translateX(-50%) translateY(-25%);
+  }
+  70% {
+    width: 240%;
+    -webkit-transform: translateX(-25%) translateY(-25%);
+            transform: translateX(-25%) translateY(-25%);
+  }
+  80% {
+    width: 220%;
+    -webkit-transform: translateX(-25%) translateY(-50%);
+            transform: translateX(-25%) translateY(-50%);
+  }
+  100% {
+    width: 210%;
+    -webkit-transform: translateX(-25%) translateY(-25%);
+            transform: translateX(-25%) translateY(-25%);
+  }
+}
+@keyframes panning {
+  0% {
+    -webkit-transform: translateX(-25%) translateY(-25%);
+            transform: translateX(-25%) translateY(-25%);
+  }
+  20% {
+    width: 250%;
+    -webkit-transform: translateX(0) translateY(-50%);
+            transform: translateX(0) translateY(-50%);
+  }
+  40% {
+    width: 230%;
+    -webkit-transform: translateX(-25%) translateY(-50%);
+            transform: translateX(-25%) translateY(-50%);
+  }
+  60% {
+    width: 210%;
+    -webkit-transform: translateX(-50%) translateY(-25%);
+            transform: translateX(-50%) translateY(-25%);
+  }
+  70% {
+    width: 240%;
+    -webkit-transform: translateX(-25%) translateY(-25%);
+            transform: translateX(-25%) translateY(-25%);
+  }
+  80% {
+    width: 220%;
+    -webkit-transform: translateX(-25%) translateY(-50%);
+            transform: translateX(-25%) translateY(-50%);
+  }
+  100% {
+    width: 210%;
+    -webkit-transform: translateX(-25%) translateY(-25%);
+            transform: translateX(-25%) translateY(-25%);
+  }
+}
+@-webkit-keyframes slideFadeDown {
+  0% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFadeDown {
+  0% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ecf0f1;
+width: 100%;
+
+            margin: auto;
+}
+.profile-card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 80px auto;
+  padding-top: 20%;
+  overflow: hidden;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 1px rgba(34, 34, 34, 0.5);
+  -webkit-transition: box-shadow 1s;
+  transition: box-shadow 1s;
+}
+header, .profile-bio {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  overflow: hidden;
+  line-height: 0;
+}
+header a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: 8;
+  overflow: hidden;
+  border-radius: 10px;
+  line-height: 0;
+}
+header a img {
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  line-height: 0;
+
+}
+header a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  background-image: url("background.jpg");
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+header h1, header h2 {
+  position: absolute;
+  top: 53%;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 10;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+header h1 {
+  font-size: 3em;
+  line-height: 1em;
+  letter-spacing: .04em;
+}
+header h1:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  margin: 2px auto;
+  background-color: white;
+}
+header h2 {
+font-size:14px;
+  top: 85%;
+  font-weight: 300;
+  line-height: 1em;
+  letter-spacing: .22em;
+  -webkit-animation: slideFadeDown .5s;
+          animation: slideFadeDown .5s;
+}
+.profile-bio p {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 12;
+  padding: 0 30px;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+font-weight:300;
+font-size: 20px;
+  line-height: 1.2em;
+  text-align: center;
+  -webkit-transform: translateX(100%) translateY(-50%);
+          transform: translateX(100%) translateY(-50%);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86), -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.profile-social-links {
+    padding-left: 0px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  bottom: auto;
+  left: 0;
+  z-index: 12;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translateX(100%) translateY(-50%);
+          transform: translateX(100%) translateY(-50%);
+  -webkit-transition: opacity 1.5s, -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: opacity 1.5s, -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1.5s;
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1.5s, -webkit-transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.profile-social-links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.profile-social-links li img {
+  display: block;
+  width: 100%;
+  max-width: 40px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-transform .5s, -webkit-filter 5s;
+  transition: -webkit-transform .5s, -webkit-filter 5s;
+  transition: transform .5s, filter 5s;
+  transition: transform .5s, filter 5s, -webkit-transform .5s, -webkit-filter 5s;
+}
+.profile-card:hover {
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.3);
+}
+.profile-card:hover header a:before {
+  background-color: rgba(44, 62, 80, 0.8);
+}
+.profile-card:hover h1, .profile-card:hover h2 {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.profile-card:hover .profile-bio p, .profile-card:hover .profile-social-links {
+  -webkit-transform: translateX(0) translateY(-50%);
+          transform: translateX(0) translateY(-50%);
+  opacity: 1;
+}
+p
+{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size:18px;
+font-weight:300;
+color:#ffffff;
+letter-spacing: 0.03em;
+  }
+a{
+color:#fff;
+  }
+    </style>
+<script src="./Cover/bootstrap.min.js"></script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<!--start header-->
+<header class="header">
+</header>
+<!--end header-->
+<!-- this is the markup. you can change the details (your own name, your own avatar etc.) but don&#8217;t change the basic structure! -->
+<aside class="profile-card">
+<header>
+<!-- here&#8217;s the avatar -->
+<a href="./Cover/Snehal_Shendware_Resume.pdf" target="_blank">
+<img src="./Cover/snehal_img.png">
+</a>
+<!-- the username -->
+<h1>Snehal Shendware</h1>
+<!-- and role or location -->
+<h2>Code. Eat. Sleep. Repeat!</h2>
+</header>
+<!-- bit of a bio; who are you? -->
+<div class="profile-bio">
+<p></br></br>Graduate Student @ </br> Arizona State University</p>
+</div>
+<!-- some social links to show off -->
+<ul class="profile-social-links">
+<!-- twitter - el clásico -->
+<li>
+<a href="https://www.quora.com/profile/Snehal-Shendware" target="_blank">
+<img src="./Cover/quora_img.png" data-pin-nopin="true">
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/snehi23" target="_blank">
+<img src="./Cover/facebook_img.png" data-pin-nopin="true">
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/in/snehi23" target="_blank">
+<img src="./Cover/LinkedIn_img.png" data-pin-nopin="true">
+</a>
+</li>
+<li>
+<a href="https://github.com/snehi23" target="_blank">
+<img src="./Cover/github-cat.png" data-pin-nopin="true">
+</a>
+</li>
+<p><!--Blog Link: <a href="http://blog.wtpoo.github.io/" target="_blank">blog.wtpoo.github.io</a>-->
+E-mail: snehal.shendware@asu.edu
+</p>
+<!-- add or remove social profiles as you see fit -->
+</ul>
+</aside>
+<!-- that&#8217;s all folks! -->
+<div id="home-blog-info">
+<div class="home-descriptionsec section" id="home-descriptionsec"></div>
+</div>
+<span style="height: 20px; width: 40px; position: absolute; opacity: 1; z-index: 8675309; display: none; cursor: pointer; border: none; background-image: url(&quot;data:image/png;base64,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&quot;); background-color: transparent; background-size: 40px 20px;"></span></body></html>
