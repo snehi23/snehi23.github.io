@@ -1,443 +1,918 @@
-<!--
-
-This site is developed using bootstrap template and fullpage.js
-
--->
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>SnehalShendware</title>
-	<meta name="description" content="Personal Portfolio for Snehal" />
-	<meta name="keywords"  content="Portfolio" />
-	<meta name="Resource-type" content="Document" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="IAMX, One Page Responsive HTML Resume Template">
+  <meta name="keywords" content="onepage, resume, CV HTML template, personal Vcard, html resume, free resume template, free HTML template, free bootstrap template, personal portfolio, free html portfolio">
+	<meta name="author" content="http://trendytheme.net/">
 
-	    <!-- Le styles -->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-	<style>
+	<title>Snehal Shendware</title>
 
-	.avatar512 {
-    width:40%;
-    height:40%;
-    border:6px solid #fff;
-     background-position: 50% 50%;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-	}
+  <!-- Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- Font Awesome CSS -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<!-- Animate css -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <!-- Magnific css -->
+	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+  <!-- Responsive CSS -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
 
-	.avatar256 {
-    width:256px;
-    height:256px;
-    border:6px solid #fff;
-     background-position: 50% 50%;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-	}
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-	.section{
-		text-align:center;
-	}
-
-
-	.box{
-		display: block;
-		background: #f2f2f2;
-		border:1px solid #ccc;
-		padding: 20px;
-		margin:20px 0;
-	}
-
-
-    /* GLOBAL STYLES
-    -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
-
-    body {
-      padding-bottom: 40px;
-      color: #5a5a5a;
-    }
-
-
-
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
-
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
-
-/* MARKETING CONTENT
-    -------------------------------------------------- */
-
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-
-    /* Featurettes
-    ------------------------- */
-
-    .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
-
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
-
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
-
-
-
-    /* RESPONSIVE CSS
-    -------------------------------------------------- */
-
-    @media (max-width: 979px) {
-
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
-
-      .carousel .item {
-        height: 100%;
-      }
-      .carousel img {
-        width: auto;
-        height: 100%;
-      }
-
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
-
-
-    @media (max-width: 767px) {
-
-      .navbar-inner {
-        margin: -20px;
-      }
-
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
-
-      }
-      .carousel .item {
-        height: 100%;
-      }
-      .carousel img {
-        height: 1028px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
-
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
-
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
-
-    }
-
-	</style>
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-	<script type="text/javascript" src="js/scrolloverflow.js"></script>
-
-	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-	<script type="text/javascript" src="js/examples.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage'],
-				sectionsColor: ['#4A6FB1'],
-				autoScrolling: false,
-				css3: true,
-				fitToSection: false
-			});
-		});
-	</script>
+  <link rel="shortcut icon" href="assets/images/ico/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
 
 </head>
+
 <body>
-<div id="fullpage">
-	<div class="section " id="section0">
-		<img class="avatar256" src="Snehal_Shendware.jpg"></img
-		<div class="slide">
-			<h1>Snehal Shendware</h1>
-			<h2>Graduate Student @ Arizona State University</h2>
+	<!-- Preloader -->
+	<div id="tt-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
 		</div>
-		<!-- <div class="slide">
-			<h1>And a normal website under it</h1>
-		</div>
-
-		<div class="slide">
-			<h1>A great single slider!</h1>
-		</div> -->
 	</div>
-</div>
 
-<div class="container marketing">
+	<!-- Home Section -->
+	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+		<div class="intro">
+			<div class="intro-sub">I am Snehal Shendware</div>
+			<h1>A Software <span>Engineer</span></h1>
+			<p>Proficient in end-to-end software development <br> I love to be "INTERESTED"</p>
 
-	<h2 style="text-align: center; font-size: 100px; margin-top: 100px; margin-bottom: 100px;">Education</h2>
-	<!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span6">
-          <img style="display: block;margin-left: auto;margin-right: auto; width: 140px; height: 140px" data-src="holder.js/140x140" src="imgs/asu_logo.png">
-          <h2 style="text-align: center;">Arizona State University, Arizona</h2>
-	  <h3 style="text-align: center;">Master of Science in <br/> Software Engineering</h3>
-	  <h4 style="text-align: center;">GPA: 3.5/4</h4>
-          <p style="text-align: center;" class="lead"></p>
-          <!-- <p style="text-align: center;"><a class="btn" href="">View details »</a></p> -->
-        </div><!-- /.span4 -->
-        <div class="span6">
-          <img style="display: block;margin-left: auto;margin-right: auto; width: 140px; height: 140px" data-src="holder.js/140x140" src="imgs/vit_logo.png">
-          <h2 style="text-align: center;">Vishwakarma Institute of Technology, Pune</h2>
-          <h3 style="text-align: center;">Bachelor of Technology in <br/> Computer Science and Engineering</h3>
-	  <h4 style="text-align: center;">GPA: 8.53/10</h4>
-          <p style="text-align: center;" class="lead"></p>
-          <!-- <p style="text-align: center;"><a class="btn" href="">View details »</a></p> -->
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
+      <div class="social-icons">
+        <ul class="list-inline">
+          <li><a href="https://www.facebook.com/snehi23"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://github.com/snehi23"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/snehi23/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://www.quora.com/profile/Snehal-Shendware"><i class="fa"><span class="fa fa-fw"><strong>Q</strong></span></i></a></li>
+        </ul>
+      </div> <!-- /.social-icons -->
+		</div>
 
-      <!-- START THE FEATURETTES -->
+		<div class="mouse-icon">
+			<div class="wheel"></div>
+		</div>
+	</section><!-- End Home Section -->
 
-      <hr class="featurette-divider">
 
-	<h2 style="text-align: center; font-size: 100px; margin-top: 100px; margin-bottom: 100px;">Course Projects</h2>
 
-	<div class="featurette">
-        <img style="width: 512px; height: 500px" class="featurette-image pull-left" src="imgs/kaggle.png">
-        <h2 class="featurette-heading">House Prices: Advanced Regression Techniques <span class="muted">A Kaggle competition problem statement as a part of Statistical Machine Learning</span></h2>
-        <p class="lead"><a class="btn btn-primary btn-small" href="http://github.com/snehi23/CSE575-SML_Project">Learn more</a></p>
-	<span class="label label-success">Python</span>  <span class="label label-success">MATLAB</span> <span class="label label-info">sklearn</span>  <span class="label label-info">pandas</span>
+
+	<!-- Navigation -->
+	<header class="header">
+		<nav class="navbar navbar-custom" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#works">Works</a></li>
+						<li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div><!-- .container -->
+		</nav>
+	</header><!-- End Navigation -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">About Me</h2>
+
+        <div class="row">
+
+          <div class="col-md-4 col-md-push-8">
+            <div class="biography">
+              <div class="myphoto">
+                <img src="assets/images/myphoto.jpg" alt="">
+              </div>
+              <ul>
+                <li><strong>Name:</strong> Snehal Shendware</li>
+                <li><strong>Date of birth:</strong> 23 Feb 1990</li>
+                <li><strong>Address:</strong> 1701 E 8th Street, Tempe, AZ, 85281</li>
+                <li><strong>Nationality:</strong> India</li>
+                <li><strong>Phone:</strong> (480) 616-4875</li>
+                <li><strong>Email:</strong> snehal.shendware@asu.edu</li>
+              </ul>
+            </div>
+          </div> <!-- col-md-4 -->
+
+          <div class="col-md-8 col-md-pull-4">
+            <div class="short-info wow fadeInUp">
+              <h3>Objective</h3>
+              <p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in front end centric application. I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers. I hope to develop skills in MEAN stack and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+            </div>
+
+            <div class="short-info wow fadeInUp">
+              <h3>What I Do ?</h3>
+              <p>I have been working as a web interface designer since. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS3 and HTML5 for modern websites. I loving creating awesome as per my clients’ need. I think user experience when I try to craft something for my clients. Making a design awesome.</p>
+
+              <ul class="list-check">
+                <li>Web Application Developement</li>
+                <li>Data Analytics and Visualisation</li>
+                <li>Cloud Computing</li>
+                <li>FinTech SaaS Development</li>
+                <li>Machine Learning</li>
+                <li>Alexa Skill Developer</li>
+              </ul>
+            </div>
+
+            <div class="my-signature">
+              <img src="assets/images/my_signature.gif" alt="">
+            </div>
+
+            <div class="download-button">
+              <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a>
+              <a class="btn btn-primary btn-lg" href="assets/resume/Resume.pdf"><i class="fa fa-download"></i>download my cv</a>
+            </div>
+          </div>
+
+
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </section><!-- End About Section -->
+
+
+    <!-- Video Section -->
+    <!-- <section id="video" class="video-section">
+      <div class="tf-bg-overlay">
+
+        <div class="container">
+
+          <div class="video-intro">
+             <a class="popup-video" href="https://www.youtube.com/watch?v=LGOjcu0HRec"> <i class="fa fa-play"></i>  </a>
+             <h2>Video Introducing</h2>
+          </div>
+
+        </div>
+
+        <!--/.container-->
       </div>
+      <!--/.overlay-->
+    </section> -->
+    <!-- /.Video Section -->
 
-      <hr class="featurette-divider">
 
-      <div class="featurette">
-        <img class="featurette-image pull-left" style="display: block;margin-left: auto;margin-right: auto; width: 450px; height: 500px" src="imgs/agile_tweetviz.png">
-        <h2 class="featurette-heading">Agile TweetViz: <span class="muted">An intuitive way of representing twitter feeds. ICSE SCORE 2016 competition finalist.</span></h2>
-        <p class="lead">It uses different visualization techniques to present information obtained from analysis of large amount of twitter feeds. This system uses Moose Platform - build upon Pharo - to house all the feeds in a custom designed model. A separate visualization component leverage Roassal's visualization engine. This component is assisted by a FeedParser unit that helps it to scrape through the model, mine data and use this aggregated information for its visualization unit.<a class="btn btn-primary btn-small" href="https://github.com/snehi23/AgileTweetViz-Technocrats">Learn more</a></p>
-	<span class="label label-success">Python</span>  <span class="label label-info">NLP</span>  <span class="label label-info">Pharo</span>  <span class="label label-info">Moose</span>  <span class="label label-important">Roassal</span>
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Resume</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li>
+                                <div class="posted-date">
+                                    <span class="month">2015-Present</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Masters Degree</h3>
+                                            <span>MS in Software Engineering <br/>
+																						Arizona State University, Arizona, USA</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p align="left">Studying Software Engineering with a proclivity towards Web Application Development, Cloud Computing and Machine Learning.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">2008-2012</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>BACHELORS DEGREE</h3>
+																						<span>B.Tech in Computer Engineering <br/>
+                                            Vishwakarma Institute of Technology, Pune, India</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>Completed my bachelor's degree from the prestigious and historic VIT, Pune, where my focus of interest was on domains such as Data Structures and Algorithms, Distributed Systems, Operating Systems and Database Management Systems.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2006-2008</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>HIGHER SECONDARY SCHOOL</h3>
+																						<span>Science<br/>
+																						Shivaji Science College, Nagpur, India</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p align="left">My fascination towards computer science led to me to the start of my educational journey in this direction at this renowned institution.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">May’16-Aug’16</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Software Engineering Intern</h3>
+                                            <span>Financial Engines, Sunnyvale, CA</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                          <p> • Developed data-driven analytics tool for daily financial transaction activities using Splunk and HighchartJS API.<br/>
+																							• Implemented Splunk call optimization queries and an hourly auto update jobs to reduce fetch response time.<br/>
+																							• Developed Quartz dynamic scheduler using Spring web MVC and MongoDB NoSQL for transaction report scheduling.<br/>
+																							• Configured a Single Page Application with AngularJS front-end and micro services container modules in Spring.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div> <!-- /timeline-panel -->
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">Jan’16-May’16</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Software Developer</h3>
+                                            <span>ASU HEAL Lab, Tempe, AZ</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                          <p align="left"> • Developed a web portal in NodeJS for the clinicians to monitor the compliance progress of sickle cell patients.</br>
+																							• Design the workflow of future implementation in AngularJS UI with visual analysis of patient surveys.</br>
+																							• Proposed RESTful design for PRP API and presented swagger.io implementation in ExpressJS.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+														<li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">Aug’14-Jun’15</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Full Stack Software Engineer</h3>
+                                            <span>Citrus Pay, Pune, India</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                        <p> • Designed and Implemented operational panel for E-commerce Citrus Cube app (Android and iOS) and integration to Citrus pay. </br>
+																						• Implemented End-to-End REST APIs for secure mobile banking payments (OAuth2). </br>
+																						• Developed REST API for recharge data plan auto-refresh and periodic cleanup using Spring custom scheduler. </br>
+																						• Developed dynamic templates for Email and SMS notification trigger using Spring Aspect Oriented Programming (AOP).</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+														<li>
+                                <div class="posted-date">
+                                  <span class="month">May’12-Jun’14</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Project Engineer</h3>
+                                            <span>Wipro Technologies, Bangalore, India</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                          <p align="left">• Engineered a Cisco Unity Express (CUE) routers to manage voicemail, auto attendant and interactive voice response (IVR). </br>
+																						• Successfully delivered Proof of Concept (POC) of NVOT using scalable technology stack (Spring and Hibernate). </br>
+																						• NVOT is web portal for project life cycle management in Cisco with data provided by Clarity REST Web Services. </br>
+																						• Developed an Innovative REST utility using Postman to automate change in project configurations.</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+        </div><!-- /.container -->
+    </section><!-- End Resume Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Skills</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Java</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>95%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Java Script</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>Python</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>65%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="skill-progress">
+              <div class="skill-title"><h3>SQL</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>85%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>HTML5</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+            <div class="skill-progress">
+              <div class="skill-title"><h3>CSS3</h3></div>
+              <div class="progress">
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                </div>
+              </div><!-- /.progress -->
+            </div><!-- /.skill-progress -->
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+
+        <div class="skill-chart text-center">
+          <h3>More skills</h3>
+        </div>
+
+        <div class="row more-skill text-center">
+          <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="91" data-color="e74c3c">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>REST Web Services</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="90" data-color="2ecc71">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Object Oriented Analysis and Design</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="75" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Twitter Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="60" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>AWS (EC2 and Lambda)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="90" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Data Analytics and Visualisation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="87" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Agile Development Process</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- End Skills Section -->
+
+
+    <!-- Works Section -->
+    <section id="works" class="works-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Works</h2>
+
+        <ul class="list-inline" id="filter">
+            <li><a class="active" data-group="all">All</a></li>
+            <li><a data-group="design">Design</a></li>
+            <li><a data-group="web">Web</a></li>
+            <li><a data-group="interface">Interface</a></li>
+            <li><a data-group="identety">Identity</a></li>
+        </ul>
+
+        <div class="row">
+          <div id="grid">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "interface"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-1.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-1.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+
+
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-2.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-2.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "interface"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-3.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-3.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-4.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-4.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-5.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-5.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-6.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-6.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-7.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-7.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a class="image-link" href="assets/images/works/portfolio-8.jpg"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                  </div><!-- /.links -->
+                  <img src="assets/images/works/portfolio-8.jpg" alt="image">
+                  <div class="portfolio-info">
+                    <h3>Portfolio Title</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+          </div><!-- /#grid -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Works Section -->
+
+
+    <!-- Facts Section -->
+    <section id="facts" class="facts-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+      <div class="tt-overlay-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="count-wrap">
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-flask"></i>
+                  <h3 class="timer">3</h3>
+                  <p>Years of Experience</p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-thumbs-up"></i>
+                  <h3 class="timer">18</h3>
+                  <p>Projects Done</p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-users"></i>
+                  <h3 class="timer">56</h3>
+                  <p>Happy Clients</p>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                  <i class="fa fa-trophy"></i>
+                  <h3 class="timer">3</h3>
+                  <p>Awards Won</p>
+                </div>
+              </div><!-- /count-wrap -->
+            </div><!-- /.col-md-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
       </div>
-
-			<hr class="featurette-divider">
-
-			<div class="featurette">
-				        <img class="featurette-image pull-right" style="display: block;margin-left: auto;margin-right: auto; width: 600px; height: 400px" src="imgs/prp.png">
-				        <h2 class="featurette-heading">mHealth : Pain Reporting Portal <span class="muted"> is a de-identified patient and survey management system.</span></h2>
-				        <p class="lead">
-						It allows clinicians to schedule digital surveys to be delivered to patients. As well as allowing clinicians to monitor patient responses to look for possible interventions.
-					<a class="btn btn-primary btn-small" href="https://www.youtube.com/watch?v=X0eVSH3Dan8">Learn more</a></p>
-					<a class="label label-success">NodeJS</a> <span class="label label-info">AngularJS</span> <span class="label label-info">REST API</span> <span class="label label-info">Visual Analytics</span>
-				      </div>
-
-			<hr class="featurette-divider">
+    </section> <!-- End Facts Section -->
 
 
-	<h2 style="text-align: center; font-size: 100px; margin-top: 100px; margin-bottom: 100px;">Freelance Projects</h2>
+    <!-- Blog Section -->
+    <section id="blog" class="latest-blog-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Latest Post</h2>
 
-	<div class="featurette">
-		<img class="featurette-image pull-right" style="display: block;margin-left: auto;margin-right: auto; width: 600px; height: 400px" src="imgs/mytravelogue.png">
-		<h2 class="featurette-heading">Travelogue: <span class="muted"> Personal travel tracking website</span></h2>
-		<p class="lead">A Web application where one can log train journeys, maintain details of each journey and see statistics with journey timelines. <a class="btn btn-primary btn-small" href="http://mytravelogue.info">Learn more</a></p>
-		<span class="label label-success">Java/J2EE</span>  <span class="label label-info">Javascript</span>  <span class="label label-info">Google Charts</span>  <span class="label label-info">jQuery</span>  <span class="label label-important">MongoDB</span> <span class="label label-success">BootStrap</span>
+        <div class="row">
+          <div class="col-sm-4">
+            <article class="blog-post-wrapper">
+              <div class="figure">
+                <div class="post-thumbnail">
+                  <a href="#"><img src="assets/images/blog/01.jpg" class="img-responsive " alt=""></a>
+                </div>
+                  <i class="fa fa-file-photo-o"></i>
+              </div><!-- /.figure -->
+              <header class="entry-header">
+                <div class="post-meta">
+                  <span class="the-category">
+                    <a href="#">Print Design,</a> <a href="#">Photoshop</a>
+                  </span>
+                </div>
+                <h2 class="entry-title"><a href="#" rel="">Common fonts used for newspaper template design</a></h2>
+                <hr>
+                <div class="entry-meta">
+                  <ul class="list-inline">
+                    <li>
+                      <span class="the-author">
+                        <a href="#">Admin</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-time">
+                        <a href="#">06 Jan 2015</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-share">
+                        <a href="#" title="share">30</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-comments">
+                        <a href="#" title="">05</a>
+                      </span>
+                    </li>
+                  </ul>
+                </div><!-- .entry-meta -->
+              </header><!-- .entry-header -->
+            </article>
+          </div><!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <article class="blog-post-wrapper">
+              <div class="figure">
+                <div class="post-thumbnail">
+                  <a href="#"><img src="assets/images/blog/02.jpg" class="img-responsive " alt=""></a>
+                </div>
+                  <i class="fa fa-file-video-o"></i>
+              </div><!-- /.figure -->
+              <header class="entry-header">
+                <div class="post-meta">
+                  <span class="the-category">
+                    <a href="#">Print Design,</a> <a href="#">Photoshop</a>
+                  </span>
+                </div>
+                <h2 class="entry-title"><a href="#" rel="">What is the style of font called that is typically</a></h2>
+                <hr>
+                <div class="entry-meta">
+                  <ul class="list-inline">
+                    <li>
+                      <span class="the-author">
+                        <a href="#">Admin</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-time">
+                        <a href="#">06 Jan 2015</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-share">
+                        <a href="#" title="share">30</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-comments">
+                        <a href="#" title="">05</a>
+                      </span>
+                    </li>
+                  </ul>
+                </div><!-- .entry-meta -->
+              </header><!-- .entry-header -->
+            </article>
+          </div><!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <article class="blog-post-wrapper">
+              <div class="figure">
+                <div class="post-thumbnail">
+                  <a href="#"><img src="assets/images/blog/03.jpg" class="img-responsive " alt=""></a>
+                </div>
+                  <i class="fa fa-quote-left"></i>
+              </div><!-- /.figure -->
+              <header class="entry-header">
+                <div class="post-meta">
+                  <span class="the-category">
+                    <a href="#">Print Design,</a> <a href="#">Photoshop</a>
+                  </span>
+                </div>
+                <h2 class="entry-title"><a href="#" rel="">How to create a print ready brochure using photoshop</a></h2>
+                <hr>
+                <div class="entry-meta">
+                  <ul class="list-inline">
+                    <li>
+                      <span class="the-author">
+                        <a href="#">Admin</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-time">
+                        <a href="#">06 Jan 2015</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-share">
+                        <a href="#" title="share">30</a>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="the-comments">
+                        <a href="#" title="">05</a>
+                      </span>
+                    </li>
+                  </ul>
+                </div><!-- .entry-meta -->
+              </header><!-- .entry-header -->
+            </article>
+          </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+        <div class="blog-more text-center">
+          <a href="#" class="btn btn-primary">View More</a>
+        </div>
+
+      </div><!-- /.container -->
+    </section><!-- End Blog Section -->
+
+
+    <!-- Hire Section -->
+    <section class="hire-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+      <div class="hire-section-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>I'm available for Full Time Opportunities</h2>
+            </div><!-- /.col-md-12 -->
+          </div><!-- /.row -->
+        </div><!-- /.container -->
+      </div><!-- /.hire-section-bg -->
+    </section><!-- End Hire Section -->
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section-padding">
+      <div class="container">
+        <h2 class="section-title wow fadeInUp">Get in touch</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-form">
+              <strong>Send me a message</strong>
+              <form method="POST" action="https://formspree.io/snehal.shendware@asu.edu">
+
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required="">
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="form-control" id="email" required="">
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" name="subject" class="form-control" id="subject">
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
+                </div>
+
+                <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div><!-- /.contact-form -->
+          </div><!-- /.col-md-6 -->
+
+          <div class="col-md-6">
+            <div class="row center-xs">
+              <div class="col-sm-6">
+                <i class="fa fa-map-marker"></i>
+                <address>
+                  <strong>Address/Street</strong>
+                  1701 E 8th Street,<br> Tempe, AZ, 85281<br>
+                </address>
+              </div>
+
+              <div class="col-sm-6">
+                <i class="fa fa-mobile"></i>
+                <div class="contact-number">
+                  <strong>Phone Number</strong>
+                  (480) 616-4875<br>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="location-map">
+                <div id="mapCanvas" class="map-canvas"></div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- End Contact Section -->
+
+
+	<!-- Footer Section -->
+    <footer class="footer-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright text-center">
+              <p>&copy; TrendyTheme 2015. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- End Footer Section -->
+
+
+	<!-- Scroll-up -->
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
 	</div>
 
-<hr class="featurette-divider">
-
-	<div class="featurette">
-		<img class="featurette-image pull-right" style="display: block;margin-left: auto;margin-right: auto; width: 400px; height: 350px" src="imgs/web_scraping.png">
-		<h2 class="featurette-heading">Web Scrapping: <span class="muted"> Is a computer software technique of extracting information from websites.</span></h2>
-		<p class="lead">
-			A Python based web data extraction tool to map Autonomous System Number (ASN) to company that owns it. This utility consumes a Beautiful Soap API to parse the information in HTML DOM.
-			<a class="btn btn-primary btn-small" href="https://www.youtube.com/watch?v=X0eVSH3Dan8">Learn more</a></p>
-			<a class="label label-success">Python</a> <span class="label label-info">Beautiful Soup</span> <span class="label label-info">Data Extraction and Mining</span>
-	</div>
-
-<hr class="featurette-divider">
-
-	<h2 style="text-align: center; font-size: 100px; margin-top: 100px; margin-bottom: 100px;">Technologies</h2>
-	<!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="span4">
-          <div class="progress progress-success progress-striped">
-		  <div class="bar" style="width: 90%">Java</div>
-		</div>
-		<div class="progress progress-success progress-striped">
-		  <div class="bar" style="width: 80%">Javascript</div>
-		</div>
-		<div class="progress progress-danger progress-striped">
-		  <div class="bar" style="width: 60%">Python</div>
-		</div>
-		<div class="progress progress-info progress-striped">
-		  <div class="bar" style="width: 70%">HTML/CSS</div>
-		</div>
-		<div class="progress progress-warning progress">
-		  <div class="bar" style="width: 70%">SQL</div>
-		</div>
-        </div><!-- /.span4 -->
-	<div class="span4">
-          <div class="progress progress-info progress">
-		  <div class="bar" style="width: 70%">NodeJS</div>
-		</div>
-		<div class="progress progress-success progress-striped">
-		  <div class="bar" style="width: 80%">AngularJS</div>
-		</div>
-		<div class="progress progress-warning progress-striped">
-		  <div class="bar" style="width: 60%">Spring</div>
-		</div>
-		<div class="progress progress-info progress-striped">
-		  <div class="bar" style="width: 65%">Hibernate</div>
-		</div>
-		<div class="progress progress-danger progress-striped">
-		  <div class="bar" style="width: 60%">MongoDB</div>
-		</div>
-        </div><!-- /.span4 -->
-	<div class="span4">
-          <div class="progress progress-success progress">
-		  <div class="bar" style="width: 90%">HTML</div>
-		</div>
-		<div class="progress progress-warning progress">
-		  <div class="bar" style="width: 50%">CSS</div>
-		</div>
-		<div class="progress progress-danger progress">
-		  <div class="bar" style="width: 30%">jQuery</div>
-		</div>
-		<div class="progress progress-info progress">
-		  <div class="bar" style="width: 60%">Bootstrap</div>
-		</div>
-		<div class="progress progress-success progress-striped">
-		  <div class="bar" style="width: 90%">HighChartsJS</div>
-		</div>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
-
-	<hr class="featurette-divider">
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->``
-      <footer>
-        <!-- <p class="pull-right"><a href="">Back to top</a></p>-->
-        <p style="text-align:center">© Snehal Shendware </p>
-	<p style="text-align:center">
-		<a href="https://www.facebook.com/snehi23">Facebook</a> .
-		<a href="https://www.quora.com/profile/Snehal-Shendware">Quora</a> .
-		<a href="https://www.linkedin.com/in/snehi23">LinkedIn</a> .
-		<a href="https://github.com/snehi23">Github</a> .
-		<a href="Resume.pdf">Resume</a>
-	</p>
-      </footer>
-
-    </div><!-- /.container -->
-
+	<!-- Javascript files -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.inview.min.js"></script>
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAGd0G-I1ZepBC2X5oR1DmAJRMS9aPF4G0"></script>
+  <script src="assets/js/scripts.js"></script>
 </body>
 </html>
